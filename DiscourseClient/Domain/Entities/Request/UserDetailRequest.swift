@@ -1,25 +1,26 @@
 //
-//  UsersRequest.swift
+//  UserDetailRequest.swift
 //  DiscourseClient
 //
-//  Created by Noe Cruz Rodriguez on 18/07/2021.
+//  Created by Noe Cruz Rodriguez on 20/07/2021.
 //
 
 import Foundation
 
-class UsersRequest: APIRequest {
-    typealias Response = UsersResponse
+class UserDetailRequest: APIRequest {
+    typealias Response = UserDetailResponse
 
     var method: Method {
         return .GET
     }
     
     var path: String {
-        return "/directory_items.json"
+        // return "/u/\(username).json"
+        return ""
     }
     
     var parameters: [String : String] {
-        return ["period":"all"]
+        return [:]
     }
     
     var body: [String : Any] {

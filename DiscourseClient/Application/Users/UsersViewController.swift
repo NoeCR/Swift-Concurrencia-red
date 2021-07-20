@@ -36,7 +36,14 @@ class UsersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.viewDidLoad()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            [unowned self] in self.showLoader()
+        }
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.showLoader()
+//    }
     
     override func loadView() {
         // Inicializamos la vista
@@ -83,16 +90,21 @@ extension UsersViewController: UITableViewDataSource {
 
 extension UsersViewController: UsersViewProtocol {
     func usersFetch() {
+        hideLoader()
         tableView.reloadData()
     }
     
     func errorFetchingUsers() {
+        hideLoader()
         showErrorFetchingUsers()
     }
 }
 
 extension UsersViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        viewModel.didSelectRow(at: indexPath)
+    }
 }
 
 

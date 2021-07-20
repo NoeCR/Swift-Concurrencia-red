@@ -53,4 +53,7 @@ class UsersViewModel: ViewModel {
         return userCellViewModels[indexPath.row]
     }
     
+    func didSelectRow(at indexPath: IndexPath) {
+        coordinator?.didSelect(username: userCellViewModels[indexPath.row].user.username)
+    }
 }

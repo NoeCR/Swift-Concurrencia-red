@@ -12,6 +12,9 @@ class UsersCoordinator: Coordinator {
     var navigator: UINavigationController
     let userUseCases: UsersUseCases
     
+    let remoteDataManager = RemoteDataManager()
+    lazy var userDetailUseCases: UserDetailUseCases = DataManager(remoteDataManager: remoteDataManager)
+    
     init(navigator: UINavigationController, usersUseCases: UsersUseCases) {
         self.navigator = navigator
         self.userUseCases = usersUseCases
@@ -26,5 +29,11 @@ class UsersCoordinator: Coordinator {
         userViewModel.coordinator = self
         
         navigator.pushViewController(userViewController, animated: false)
+    }
+    
+    func didSelect(username: String) {
+        let userDetailCoordinator = UserDetailCoordinator(navigator: navigator, username: username, useCases: userDetailUseCases)
+        
+        userDetailCoordinator.start()
     }
 }

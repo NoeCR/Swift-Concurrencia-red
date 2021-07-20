@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */; };
+		CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */; };
+		CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */; };
+		CC41CD0A26A72BCD00073C9F /* UserDetailUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0926A72BCD00073C9F /* UserDetailUseCases.swift */; };
+		CC41CD0E26A72CE200073C9F /* UserDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0D26A72CE200073C9F /* UserDetailRequest.swift */; };
+		CC41CD1126A72DB300073C9F /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD1026A72DB300073C9F /* UserDetailResponse.swift */; };
 		CC8FBD3E26A44F25006518E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8FBD3D26A44F25006518E7 /* AppDelegate.swift */; };
 		CC8FBD4026A44F25006518E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8FBD3F26A44F25006518E7 /* SceneDelegate.swift */; };
 		CC8FBD4226A44F25006518E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8FBD4126A44F25006518E7 /* ViewController.swift */; };
@@ -31,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
+		CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		CC41CD0926A72BCD00073C9F /* UserDetailUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailUseCases.swift; sourceTree = "<group>"; };
+		CC41CD0D26A72CE200073C9F /* UserDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRequest.swift; sourceTree = "<group>"; };
+		CC41CD1026A72DB300073C9F /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
 		CC8FBD3A26A44F25006518E7 /* DiscourseClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscourseClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8FBD3D26A44F25006518E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC8FBD3F26A44F25006518E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC41CCFE26A72A8B00073C9F /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */,
+				CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */,
+				CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		CC41CD0826A72BBA00073C9F /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC41CD0926A72BCD00073C9F /* UserDetailUseCases.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		CC8FBD3126A44F25006518E7 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				CC8FBD8226A48D49006518E7 /* UsersRequest.swift */,
+				CC41CD0D26A72CE200073C9F /* UserDetailRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -156,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				CC8FBD8526A48D53006518E7 /* UsersResponse.swift */,
+				CC41CD1026A72DB300073C9F /* UserDetailResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -173,6 +205,7 @@
 		CC8FBD6226A45AB1006518E7 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				CC41CCFE26A72A8B00073C9F /* UserDetail */,
 				CC8FBD6326A45AC8006518E7 /* UsersViewController.swift */,
 				CC8FBD6626A45AE4006518E7 /* UsersViewModel.swift */,
 				CC8FBD6926A45AF2006518E7 /* UsersCoordinator.swift */,
@@ -195,6 +228,7 @@
 		CC8FBD7026A47CE1006518E7 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				CC41CD0826A72BBA00073C9F /* UserDetail */,
 				CC8FBD7126A47CF2006518E7 /* UsersUseCases.swift */,
 			);
 			path = Users;
@@ -280,16 +314,22 @@
 			files = (
 				CC8FBD9326A4C2AE006518E7 /* UIViewController+Extension.swift in Sources */,
 				CC8FBD5726A44FC7006518E7 /* AppCoordinator.swift in Sources */,
+				CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */,
+				CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */,
+				CC41CD1126A72DB300073C9F /* UserDetailResponse.swift in Sources */,
 				CC8FBD7626A47E93006518E7 /* DataManager.swift in Sources */,
 				CC8FBD8326A48D49006518E7 /* UsersRequest.swift in Sources */,
+				CC41CD0E26A72CE200073C9F /* UserDetailRequest.swift in Sources */,
 				CC8FBD8026A48081006518E7 /* APIRequest.swift in Sources */,
 				CC8FBD8C26A4B3CD006518E7 /* UserCell.swift in Sources */,
 				CC8FBD6726A45AE4006518E7 /* UsersViewModel.swift in Sources */,
 				CC8FBD4226A44F25006518E7 /* ViewController.swift in Sources */,
 				CC8FBD6426A45AC8006518E7 /* UsersViewController.swift in Sources */,
+				CC41CD0A26A72BCD00073C9F /* UserDetailUseCases.swift in Sources */,
 				CC8FBD7D26A47F39006518E7 /* SessionApi.swift in Sources */,
 				CC8FBD7226A47CF2006518E7 /* UsersUseCases.swift in Sources */,
 				CC8FBD7A26A47F17006518E7 /* RemoteDataManager.swift in Sources */,
+				CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */,
 				CC8FBD6A26A45AF2006518E7 /* UsersCoordinator.swift in Sources */,
 				CC8FBD8626A48D53006518E7 /* UsersResponse.swift in Sources */,
 				CC8FBD3E26A44F25006518E7 /* AppDelegate.swift in Sources */,
