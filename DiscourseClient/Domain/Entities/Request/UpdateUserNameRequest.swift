@@ -22,12 +22,12 @@ class UpdateNameRequest: APIRequest {
     }
     
     var path: String {
-        return "users/\(self.username)"
+        return "/users/\(username)"
     }
     
     var parameters: [String : String] {[:]}
     
-    var body: [String : Any] {[ "name": self.name ]}
+    var body: [String : Any] {[ "name": name ]}
     
     var headers: [String : String] {[:]}
 }

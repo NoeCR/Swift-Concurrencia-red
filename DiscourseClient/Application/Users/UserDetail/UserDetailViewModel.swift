@@ -11,7 +11,7 @@ protocol UserDetailViewProtocol: AnyObject {
     func userDetailFetch(userDetail: UserDetailViewStruct)
     func errorFetchingUserDetail()
     func errorUpdatingName()
-    func updateNameSuccessfully(updateResult: String)
+    func updateNameSuccessfully()
 }
 
 struct UserDetailViewStruct {
@@ -52,16 +52,14 @@ class UserDetailViewModel: ViewModel {
         }
     }
     
-    func updateName(username: String, name: String) {
+    func updateName(name: String) {
         useCases.updateUserName(username: username, name: name) { [weak self] result in
             print(result)
             switch result {           
             case .success(let response):
-                guard let response = response else { self?.view?.errorUpdatingName(); return }
+//                guard let response = response else { self?.view?.errorUpdatingName(); return }
                 
-                print(response)
-                
-                self?.view?.updateNameSuccessfully(updateResult: response.success)
+                self?.view?.updateNameSuccessfully()
                 
             case .failure:
                 self?.view?.errorUpdatingName()

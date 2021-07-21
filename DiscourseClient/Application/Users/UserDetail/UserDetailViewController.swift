@@ -63,7 +63,8 @@ class UserDetailViewController: UIViewController {
     lazy var textFieldUserName: UITextField = {
         let textFieldUserName = UITextField()
         textFieldUserName.borderStyle = .line
-        textFieldUserName.translatesAutoresizingMaskIntoConstraints = false
+        // textFieldUserName.translatesAutoresizingMaskIntoConstraints = false
+        // textFieldUserName.frame.size.width = 100
         
         return textFieldUserName
     }()
@@ -115,7 +116,7 @@ class UserDetailViewController: UIViewController {
         NSLayoutConstraint.activate([
             newUserNameStackVIew.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             newUserNameStackVIew.topAnchor.constraint(equalTo: nameStackVIew.bottomAnchor, constant: 32),
-            newUserNameStackVIew.widthAnchor.constraint(equalToConstant: 150)
+            //newUserNameStackVIew.widthAnchor.constraint(equalToConstant: 150)
         ])
         
         view.addSubview(updateNameButton)
@@ -152,32 +153,31 @@ class UserDetailViewController: UIViewController {
     }
     
     private func showErrorFetchingUserDetail() {
-        showAlert(title: "Error fetching user detail", message: "")
         hideLoader()
+        showAlert(title: "Error fetching user detail", message: "")
     }
     
     @objc func updateNameButtonTapped(){
         showLoader()
         guard let name = textFieldUserName.text, !name.isEmpty else { showAlert(title: "Error in textfield"); return }
-        
-        guard let username = labelNameValue.text, !username.isEmpty else { showAlert(title: "Can get username"); return }
-        
-        viewModel.updateName(username: username, name: name)
+                
+        viewModel.updateName(name: name)
     }
     
     private func showErrorUpdatingName() {
-        showAlert(title: "Error updating name")
         hideLoader()
+        showAlert(title: "Error updating name")
     }
     
-    private func updateUserName(updateResult: String) {
-        print(updateResult)
+    private func showSuccessUpdatingUserName() {
+        hideLoader()
+        showAlert(title: "The user name has been updated")
     }
 }
 
 extension UserDetailViewController: UserDetailViewProtocol {
-    func updateNameSuccessfully(updateResult: String) {
-        updateUserName(updateResult: updateResult)
+    func updateNameSuccessfully() {
+        showSuccessUpdatingUserName()
     }
     
     func errorUpdatingName() {
