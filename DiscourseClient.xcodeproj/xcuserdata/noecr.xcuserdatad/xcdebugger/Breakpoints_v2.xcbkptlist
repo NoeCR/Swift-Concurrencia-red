@@ -7,161 +7,241 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "31237462-082F-4989-9193-F7BE62C0B340"
+            uuid = "E737A995-9795-41B8-ABD3-0C6B825C2501"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/APIRequest.swift"
+            filePath = "DiscourseClient/Application/Users/UserDetail/UserDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "requestWithBaseURL()"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "updateNameButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "451A7BE5-14E7-45F7-BCD7-77CA25BAB14A"
+            uuid = "CC8BAEC2-72D6-41F1-9A5B-C3E47271DBA9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/SessionApi.swift"
+            filePath = "DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "request(request:completion:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "updateName(username:name:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC8BAEC2-72D6-41F1-9A5B-C3E47271DBA9 - 1bfe1ca5f8941ea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.UpdateNameResponse&gt;, Swift.Error&gt;) -&gt; () in DiscourseClient.UserDetailViewModel.updateName(username: Swift.String, name: Swift.String) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noecr/Desktop/DiscourseClient/DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "CC8BAEC2-72D6-41F1-9A5B-C3E47271DBA9 - 1bfe1ca5f8941ea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.UpdateNameResponse&gt;, Swift.Error&gt;) -&gt; () in DiscourseClient.UserDetailViewModel.updateName(username: Swift.String, name: Swift.String) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noecr/Desktop/DiscourseClient/DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "531">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "68EF2D6E-8F91-4A35-9B9F-2AA60DE91659"
+            uuid = "98E0B94E-7F7A-4171-9BD7-291B0E2F7426"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/SessionApi.swift"
+            filePath = "DiscourseClient/Data/UseCases/Users/UserDetail/UserDetailUseCases.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "request(request:completion:)"
+            landmarkName = "updateUserName(username:name:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "660585B9-4504-4010-973A-837024B73FE7"
+            uuid = "F5A342BA-DF16-4315-9109-60ED46078BBA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/SessionApi.swift"
+            filePath = "DiscourseClient/Data/UseCases/Users/UserDetail/UserDetailUseCases.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "request(request:completion:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "updateUserName(username:name:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5A342BA-DF16-4315-9109-60ED46078BBA - 85e3a81f4bdd4010"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DiscourseClient.RemoteDataManager.updateUserName(username: Swift.String, name: Swift.String, completion: (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.UpdateNameResponse&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noecr/Desktop/DiscourseClient/DiscourseClient/Data/UseCases/Users/UserDetail/UserDetailUseCases.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "F5A342BA-DF16-4315-9109-60ED46078BBA - 8d0d7ea36c72de69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.UpdateNameResponse&gt;, Swift.Error&gt;) -&gt; () in DiscourseClient.RemoteDataManager.updateUserName(username: Swift.String, name: Swift.String, completion: (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.UpdateNameResponse&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noecr/Desktop/DiscourseClient/DiscourseClient/Data/UseCases/Users/UserDetail/UserDetailUseCases.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "53D594BD-AE26-4CBC-AD94-22EB792F6AB4"
+            uuid = "C06C587C-D63F-40F3-BFAB-72A0D2B772A3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/APIRequest.swift"
+            filePath = "DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "requestWithBaseURL()"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "updateName(username:name:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "84BC39E8-A69D-4CE1-9192-527D5C52EC1B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/APIRequest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "requestWithBaseURL()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DED24EF1-EF67-4975-B612-11ACAE4C3D3B"
+            uuid = "CB9355D5-3CD5-4706-90E6-401603962A64"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/APIRequest.swift"
+            filePath = "DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "requestWithBaseURL()"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "updateName(username:name:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CB9355D5-3CD5-4706-90E6-401603962A64 - 5cb9dccdcaa0b498"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DiscourseClient.UserDetailViewModel.updateName(username: Swift.String, name: Swift.String) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noecr/Desktop/DiscourseClient/DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "CB9355D5-3CD5-4706-90E6-401603962A64 - 1bfe1ca5f8941ec5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.UpdateNameResponse&gt;, Swift.Error&gt;) -&gt; () in DiscourseClient.UserDetailViewModel.updateName(username: Swift.String, name: Swift.String) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noecr/Desktop/DiscourseClient/DiscourseClient/Application/Users/UserDetail/UserDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "222">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CF1DBFA1-9B7C-4BC6-BAEA-94E2D43ECA24"
+            uuid = "C1BC4E96-AD46-4B37-82ED-5B602F359EE8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/APIRequest.swift"
+            filePath = "DiscourseClient/Application/Users/UserDetail/UserDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "requestWithBaseURL()"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "updateNameButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "32531823-08C4-4A8A-A67C-3C2520994285"
+            uuid = "D32C070C-4EDE-476A-B4FC-6FCF81F0B75A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Data/Remote/SessionApi.swift"
+            filePath = "DiscourseClient/Application/Users/UserDetail/UserDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "request(request:completion:)"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "updateNameButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A28AC174-7A19-4088-97D7-F9FFBE3FE3A0"
-            shouldBeEnabled = "No"
+            uuid = "D7236E13-3196-402B-9587-C8AAA2B85668"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DiscourseClient/Application/Users/UsersViewController.swift"
+            filePath = "DiscourseClient/Data/UseCases/Users/UserDetail/UserDetailUseCases.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "UsersViewController"
-            landmarkType = "3">
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "updateUserName(username:name:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

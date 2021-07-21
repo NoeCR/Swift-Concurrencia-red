@@ -8,10 +8,10 @@
 import Foundation
 
 struct UserDetailResponse: Codable {
-    let userDetail: UserDetail
+    let user: UserDetail
     
     enum CodingKeys: String, CodingKey {
-        case userDetail = "user"
+        case user = "user"
     }
 }
 
@@ -19,4 +19,12 @@ struct UserDetail: Codable {
     let id: Int
     let username: String
     let name: String
+    let canEditName: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case username
+        case name
+        case canEditName = "can_edit_name"
+    }
 }

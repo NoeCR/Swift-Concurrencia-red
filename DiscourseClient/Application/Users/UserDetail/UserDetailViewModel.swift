@@ -8,8 +8,16 @@
 import Foundation
 
 protocol UserDetailViewProtocol: AnyObject {
-    func userDetailFetch()
+    func userDetailFetch(userDetail: UserDetailViewStruct)
     func errorFetchingUserDetail()
+    func errorUpdatingName()
+    func updateNameSuccessfully(updateResult: String)
+}
+
+struct UserDetailViewStruct {
+    var userId: String?
+    var nameLabel: String?
+    var canEditName: Bool
 }
 
 class UserDetailViewModel: ViewModel {
@@ -29,16 +37,35 @@ class UserDetailViewModel: ViewModel {
     }
     
     func viewDidLoad() {
-        useCases.fetchUserDetail { [weak self] result in
+        useCases.fetchUserDetail(username: username) { [weak self] result in
             switch result {
             case .success(let response):
                 guard let response = response else { self?.view?.errorFetchingUserDetail(); return }
+                
+                let userDetailStruct = UserDetailViewStruct(userId: "\(response.user.id)", nameLabel: response.user.name, canEditName: response.user.canEditName)
             
-                self?.view?.userDetailFetch()
+                self?.view?.userDetailFetch(userDetail: userDetailStruct)
             case .failure:
                 self?.view?.errorFetchingUserDetail()
             }
             
+        }
+    }
+    
+    func updateName(username: String, name: String) {
+        useCases.updateUserName(username: username, name: name) { [weak self] result in
+            print(result)
+            switch result {           
+            case .success(let response):
+                guard let response = response else { self?.view?.errorUpdatingName(); return }
+                
+                print(response)
+                
+                self?.view?.updateNameSuccessfully(updateResult: response.success)
+                
+            case .failure:
+                self?.view?.errorUpdatingName()
+            }
         }
     }
 }
