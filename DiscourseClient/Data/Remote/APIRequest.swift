@@ -56,8 +56,8 @@ extension APIRequest {
         // Añadimos el header para enviar objetos JSON serializados
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         // Añadimos el header para identificarnos en la petición
-        // request.addValue("Noe", forHTTPHeaderField: "Api-Username")
-        request.addValue("che1404", forHTTPHeaderField: "Api-Username")
+        request.addValue("Noe", forHTTPHeaderField: "Api-Username")
+        // request.addValue("che1404", forHTTPHeaderField: "Api-Username")
         // Añadimos el API Key para validar la llamada
         request.addValue("699667f923e65fac39b632b0d9b2db0d9ee40f9da15480ad5a4bcb3c1b095b7a", forHTTPHeaderField: "Api-Key")
         

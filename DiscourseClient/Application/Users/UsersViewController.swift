@@ -35,12 +35,18 @@ class UsersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        viewModel.viewDidLoad()
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            [unowned self] in self.showLoader()
+//        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         viewModel.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             [unowned self] in self.showLoader()
         }
     }
-    
 //    override func viewWillAppear(_ animated: Bool) {
 //        self.showLoader()
 //    }

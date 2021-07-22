@@ -43,9 +43,15 @@ class AppCoordinator: Coordinator {
         
         usersCoordinator.start()
         
+        let topicsNavigator = UINavigationController()
+        let topicsCoordinator = TopicsCoordinator(navigator: topicsNavigator, topicUseCases: dataManager)
+        
+        topicsCoordinator.start()
+        
         // viewcontroller of tabbar
-        tabBarController.viewControllers = [usersNavigator]
+        tabBarController.viewControllers = [usersNavigator, topicsNavigator]
         tabBarController.tabBar.items?.first?.image = UIImage(systemName: "tag")
+        tabBarController.tabBar.items?[1].image = UIImage(systemName: "list.dash")
         
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()

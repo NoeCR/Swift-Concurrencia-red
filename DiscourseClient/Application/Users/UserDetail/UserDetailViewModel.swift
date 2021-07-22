@@ -54,13 +54,9 @@ class UserDetailViewModel: ViewModel {
     
     func updateName(name: String) {
         useCases.updateUserName(username: username, name: name) { [weak self] result in
-            print(result)
             switch result {           
-            case .success(let response):
-//                guard let response = response else { self?.view?.errorUpdatingName(); return }
-                
+            case .success:
                 self?.view?.updateNameSuccessfully()
-                
             case .failure:
                 self?.view?.errorUpdatingName()
             }

@@ -63,9 +63,9 @@ class UserDetailViewController: UIViewController {
     lazy var textFieldUserName: UITextField = {
         let textFieldUserName = UITextField()
         textFieldUserName.borderStyle = .line
-        // textFieldUserName.translatesAutoresizingMaskIntoConstraints = false
-        // textFieldUserName.frame.size.width = 100
-        
+        textFieldUserName.translatesAutoresizingMaskIntoConstraints = false
+        textFieldUserName.frame.size.width = view.frame.width
+                
         return textFieldUserName
     }()
     
@@ -111,7 +111,7 @@ class UserDetailViewController: UIViewController {
             nameStackVIew.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             nameStackVIew.topAnchor.constraint(equalTo: userIDStackVIew.bottomAnchor, constant: 32)
         ])
-        
+               
         view.addSubview(newUserNameStackVIew)
         NSLayoutConstraint.activate([
             newUserNameStackVIew.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
@@ -154,7 +154,7 @@ class UserDetailViewController: UIViewController {
     
     private func showErrorFetchingUserDetail() {
         hideLoader()
-        showAlert(title: "Error fetching user detail", message: "")
+        showAlert(title: "Error fetching user detail")
     }
     
     @objc func updateNameButtonTapped(){
