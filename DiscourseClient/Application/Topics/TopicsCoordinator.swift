@@ -12,6 +12,7 @@ import UIKit
 class TopicsCoordinator: Coordinator {
     var navigator: UINavigationController
     let topicsUseCases: TopicsUseCases
+    let topicDetailUseCases: TopicDetailUseCases = DataManager(remoteDataManager: RemoteDataManager())
     
     required init(navigator: UINavigationController, topicUseCases: TopicsUseCases) {
         self.navigator = navigator
@@ -30,6 +31,9 @@ class TopicsCoordinator: Coordinator {
     }
     
     func didSelectTopic(topic: Topic) {
+        let topicDetailCoordinator = TopicDetailCoordinator(navigator: navigator, topicId: topic.id, useCases: topicDetailUseCases)
+        
+        topicDetailCoordinator.start()
         
     }
 }

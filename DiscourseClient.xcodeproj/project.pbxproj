@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC40CCE826ABFF680050E016 /* TopicDetailUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCE726ABFF680050E016 /* TopicDetailUseCases.swift */; };
+		CC40CCEC26AC00440050E016 /* TopicDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCEB26AC00440050E016 /* TopicDetailResponse.swift */; };
+		CC40CCEF26AC017E0050E016 /* TopicDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCEE26AC017E0050E016 /* TopicDetailRequest.swift */; };
+		CC40CCF426AC2D3B0050E016 /* CreateTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCF226AC2D3B0050E016 /* CreateTopicViewController.swift */; };
+		CC40CCF526AC2D3B0050E016 /* CreateTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC40CCF326AC2D3B0050E016 /* CreateTopicViewController.xib */; };
+		CC40CCF926AC32120050E016 /* CreateTopicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCF826AC32120050E016 /* CreateTopicCoordinator.swift */; };
+		CC40CCFC26AC32200050E016 /* CreateTopicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCFB26AC32200050E016 /* CreateTopicViewModel.swift */; };
+		CC40CD0026AC32F80050E016 /* CreateTopicUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */; };
+		CC40CD0326AC37750050E016 /* CreateTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */; };
+		CC40CD0626AC38520050E016 /* CreateTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */; };
 		CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */; };
 		CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */; };
 		CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */; };
@@ -51,6 +61,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC40CCE726ABFF680050E016 /* TopicDetailUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailUseCases.swift; sourceTree = "<group>"; };
+		CC40CCEB26AC00440050E016 /* TopicDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailResponse.swift; sourceTree = "<group>"; };
+		CC40CCEE26AC017E0050E016 /* TopicDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailRequest.swift; sourceTree = "<group>"; };
+		CC40CCF226AC2D3B0050E016 /* CreateTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicViewController.swift; sourceTree = "<group>"; };
+		CC40CCF326AC2D3B0050E016 /* CreateTopicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateTopicViewController.xib; sourceTree = "<group>"; };
+		CC40CCF826AC32120050E016 /* CreateTopicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicCoordinator.swift; sourceTree = "<group>"; };
+		CC40CCFB26AC32200050E016 /* CreateTopicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicViewModel.swift; sourceTree = "<group>"; };
+		CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicUseCases.swift; sourceTree = "<group>"; };
+		CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicResponse.swift; sourceTree = "<group>"; };
+		CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicRequest.swift; sourceTree = "<group>"; };
 		CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
 		CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +127,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC40CCE626ABFF570050E016 /* TopicDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC40CCE726ABFF680050E016 /* TopicDetailUseCases.swift */,
+			);
+			path = TopicDetail;
+			sourceTree = "<group>";
+		};
+		CC40CCF126AC2CC20050E016 /* CreateTopic */ = {
+			isa = PBXGroup;
+			children = (
+				CC40CCF226AC2D3B0050E016 /* CreateTopicViewController.swift */,
+				CC40CCF326AC2D3B0050E016 /* CreateTopicViewController.xib */,
+				CC40CCF826AC32120050E016 /* CreateTopicCoordinator.swift */,
+				CC40CCFB26AC32200050E016 /* CreateTopicViewModel.swift */,
+			);
+			path = CreateTopic;
+			sourceTree = "<group>";
+		};
+		CC40CCFE26AC32E50050E016 /* TopicCreate */ = {
+			isa = PBXGroup;
+			children = (
+				CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */,
+			);
+			path = TopicCreate;
+			sourceTree = "<group>";
+		};
 		CC41CCFE26A72A8B00073C9F /* UserDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +267,8 @@
 				CC41CD0D26A72CE200073C9F /* UserDetailRequest.swift */,
 				CC42A30926A887A200B4B0A8 /* UpdateUserNameRequest.swift */,
 				CCCD52AD26A9D73100C9CABA /* LatestTopicsRequest.swift */,
+				CC40CCEE26AC017E0050E016 /* TopicDetailRequest.swift */,
+				CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -231,6 +280,8 @@
 				CC41CD1026A72DB300073C9F /* UserDetailResponse.swift */,
 				CC42A30C26A8894400B4B0A8 /* UpdateNameResponse.swift */,
 				CCCD52AA26A9D62D00C9CABA /* LatestTopicsResponse.swift */,
+				CC40CCEB26AC00440050E016 /* TopicDetailResponse.swift */,
+				CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -289,6 +340,7 @@
 		CCCD529C26A9D10200C9CABA /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				CC40CCF126AC2CC20050E016 /* CreateTopic */,
 				CC62434026AA02670057941B /* TopicDetail */,
 				CCCD529E26A9D12300C9CABA /* TopicsViewController.swift */,
 				CCCD52A126A9D12D00C9CABA /* TopicsViewModel.swift */,
@@ -303,6 +355,8 @@
 		CCCD529D26A9D10A00C9CABA /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				CC40CCFE26AC32E50050E016 /* TopicCreate */,
+				CC40CCE626ABFF570050E016 /* TopicDetail */,
 				CCCD52A726A9D50E00C9CABA /* TopicsUseCases.swift */,
 			);
 			path = Topics;
@@ -365,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC40CCF526AC2D3B0050E016 /* CreateTopicViewController.xib in Resources */,
 				CC8FBD4A26A44F26006518E7 /* LaunchScreen.storyboard in Resources */,
 				CCCD52B726A9DDCF00C9CABA /* TopicCell.xib in Resources */,
 				CC8FBD4726A44F26006518E7 /* Assets.xcassets in Resources */,
@@ -379,12 +434,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC40CD0326AC37750050E016 /* CreateTopicResponse.swift in Sources */,
 				CC8FBD9326A4C2AE006518E7 /* UIViewController+Extension.swift in Sources */,
 				CC8FBD5726A44FC7006518E7 /* AppCoordinator.swift in Sources */,
 				CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */,
 				CC62434226AA02790057941B /* TopicDetailViewController.swift in Sources */,
 				CC62434926AA02940057941B /* TopicDetailCoordinator.swift in Sources */,
 				CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */,
+				CC40CCEF26AC017E0050E016 /* TopicDetailRequest.swift in Sources */,
 				CC41CD1126A72DB300073C9F /* UserDetailResponse.swift in Sources */,
 				CC8FBD7626A47E93006518E7 /* DataManager.swift in Sources */,
 				CC8FBD8326A48D49006518E7 /* UsersRequest.swift in Sources */,
@@ -397,12 +454,18 @@
 				CC41CD0A26A72BCD00073C9F /* UserDetailUseCases.swift in Sources */,
 				CCCD529F26A9D12300C9CABA /* TopicsViewController.swift in Sources */,
 				CC8FBD7D26A47F39006518E7 /* SessionApi.swift in Sources */,
+				CC40CD0026AC32F80050E016 /* CreateTopicUseCases.swift in Sources */,
 				CC42A30A26A887A200B4B0A8 /* UpdateUserNameRequest.swift in Sources */,
 				CCCD52A826A9D50E00C9CABA /* TopicsUseCases.swift in Sources */,
+				CC40CCE826ABFF680050E016 /* TopicDetailUseCases.swift in Sources */,
 				CCCD52A526A9D15500C9CABA /* TopicsCoordinator.swift in Sources */,
 				CC8FBD7226A47CF2006518E7 /* UsersUseCases.swift in Sources */,
+				CC40CCF426AC2D3B0050E016 /* CreateTopicViewController.swift in Sources */,
+				CC40CCEC26AC00440050E016 /* TopicDetailResponse.swift in Sources */,
 				CCCD52A226A9D12D00C9CABA /* TopicsViewModel.swift in Sources */,
+				CC40CD0626AC38520050E016 /* CreateTopicRequest.swift in Sources */,
 				CC8FBD7A26A47F17006518E7 /* RemoteDataManager.swift in Sources */,
+				CC40CCFC26AC32200050E016 /* CreateTopicViewModel.swift in Sources */,
 				CC62434626AA02880057941B /* TopicDetailViewModel.swift in Sources */,
 				CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */,
 				CC8FBD6A26A45AF2006518E7 /* UsersCoordinator.swift in Sources */,
@@ -411,6 +474,7 @@
 				CCCD52B126A9DD3B00C9CABA /* TopicCellViewModel.swift in Sources */,
 				CC8FBD3E26A44F25006518E7 /* AppDelegate.swift in Sources */,
 				CC42A30D26A8894400B4B0A8 /* UpdateNameResponse.swift in Sources */,
+				CC40CCF926AC32120050E016 /* CreateTopicCoordinator.swift in Sources */,
 				CCCD52B426A9DD5F00C9CABA /* TopicCell.swift in Sources */,
 				CCCD52AE26A9D73100C9CABA /* LatestTopicsRequest.swift in Sources */,
 				CC8FBD8926A49223006518E7 /* UserCellViewModel.swift in Sources */,

@@ -45,6 +45,12 @@ class TopicsViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor)
         ])
+        
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(onTapAddButton))
+        
+        rightBarButtonItem.tintColor = .black
+        
+        navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
     override func viewDidLoad() {
@@ -64,6 +70,8 @@ class TopicsViewController: UIViewController {
         hideLoader()
         showAlert(title: "Error fetching topics")
     }
+    
+    @objc private func onTapAddButton(){}
 }
 
 extension TopicsViewController: UITableViewDataSource {
