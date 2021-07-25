@@ -64,4 +64,8 @@ class CategoriesViewModel: ViewModel {
         
         return categoryCellViewModels[indexPath.row]
     }
+    
+    func didSelectRow(at indexPath: IndexPath) {
+        coordinator?.didSelect(categoryId: categoryCellViewModels[indexPath.row].category.id)
+    }
 }

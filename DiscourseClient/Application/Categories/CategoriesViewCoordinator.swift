@@ -12,6 +12,9 @@ class CategoriesCoordinator: Coordinator {
     var navigator: UINavigationController
     let useCases: CategoriesUseCases
     
+    let dataManager = DataManager(remoteDataManager: RemoteDataManager())
+    lazy var categoryDetailUsuCases = dataManager
+    
     init(navigator: UINavigationController, categoriesUseCases: CategoriesUseCases) {
         self.navigator = navigator
         self.useCases = categoriesUseCases
@@ -29,5 +32,9 @@ class CategoriesCoordinator: Coordinator {
         navigator.pushViewController(categoriesViewController, animated: false)
     }
     
-    
+    func didSelect(categoryId: Int) {
+        let categoryDetailCoordinator = CategoryDetailCoordinator(navigator: navigator, categoryId: categoryId, useCases: categoryDetailUsuCases)
+        
+        categoryDetailCoordinator.start()
+    }
 }

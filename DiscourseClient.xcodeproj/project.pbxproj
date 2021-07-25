@@ -25,6 +25,12 @@
 		CC41CD1126A72DB300073C9F /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD1026A72DB300073C9F /* UserDetailResponse.swift */; };
 		CC42A30A26A887A200B4B0A8 /* UpdateUserNameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42A30926A887A200B4B0A8 /* UpdateUserNameRequest.swift */; };
 		CC42A30D26A8894400B4B0A8 /* UpdateNameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42A30C26A8894400B4B0A8 /* UpdateNameResponse.swift */; };
+		CC56DE6426ADAB2300E33FAD /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56DE6326ADAB2300E33FAD /* CategoryDetailViewController.swift */; };
+		CC56DE6826ADAB3300E33FAD /* CategoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56DE6726ADAB3300E33FAD /* CategoryDetailViewModel.swift */; };
+		CC56DE6B26ADAB4200E33FAD /* CategoryDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56DE6A26ADAB4200E33FAD /* CategoryDetailCoordinator.swift */; };
+		CC56DE6F26ADAFCB00E33FAD /* CategoryDetailUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56DE6E26ADAFCB00E33FAD /* CategoryDetailUseCases.swift */; };
+		CC56DE7326ADB48000E33FAD /* CategoryDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56DE7226ADB48000E33FAD /* CategoryDetailResponse.swift */; };
+		CC56DE7626ADB4ED00E33FAD /* CategoryDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56DE7526ADB4ED00E33FAD /* CategoryDetailRequest.swift */; };
 		CC62434226AA02790057941B /* TopicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62434126AA02790057941B /* TopicDetailViewController.swift */; };
 		CC62434626AA02880057941B /* TopicDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62434526AA02880057941B /* TopicDetailViewModel.swift */; };
 		CC62434926AA02940057941B /* TopicDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62434826AA02940057941B /* TopicDetailCoordinator.swift */; };
@@ -89,6 +95,12 @@
 		CC41CD1026A72DB300073C9F /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
 		CC42A30926A887A200B4B0A8 /* UpdateUserNameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserNameRequest.swift; sourceTree = "<group>"; };
 		CC42A30C26A8894400B4B0A8 /* UpdateNameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNameResponse.swift; sourceTree = "<group>"; };
+		CC56DE6326ADAB2300E33FAD /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
+		CC56DE6726ADAB3300E33FAD /* CategoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewModel.swift; sourceTree = "<group>"; };
+		CC56DE6A26ADAB4200E33FAD /* CategoryDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailCoordinator.swift; sourceTree = "<group>"; };
+		CC56DE6E26ADAFCB00E33FAD /* CategoryDetailUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailUseCases.swift; sourceTree = "<group>"; };
+		CC56DE7226ADB48000E33FAD /* CategoryDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailResponse.swift; sourceTree = "<group>"; };
+		CC56DE7526ADB4ED00E33FAD /* CategoryDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailRequest.swift; sourceTree = "<group>"; };
 		CC62434126AA02790057941B /* TopicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailViewController.swift; sourceTree = "<group>"; };
 		CC62434526AA02880057941B /* TopicDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailViewModel.swift; sourceTree = "<group>"; };
 		CC62434826AA02940057941B /* TopicDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailCoordinator.swift; sourceTree = "<group>"; };
@@ -192,6 +204,24 @@
 			path = UserDetail;
 			sourceTree = "<group>";
 		};
+		CC56DE6226ADAAFD00E33FAD /* CategoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC56DE6326ADAB2300E33FAD /* CategoryDetailViewController.swift */,
+				CC56DE6726ADAB3300E33FAD /* CategoryDetailViewModel.swift */,
+				CC56DE6A26ADAB4200E33FAD /* CategoryDetailCoordinator.swift */,
+			);
+			path = CategoryDetail;
+			sourceTree = "<group>";
+		};
+		CC56DE6D26ADAFBC00E33FAD /* CategoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC56DE6E26ADAFCB00E33FAD /* CategoryDetailUseCases.swift */,
+			);
+			path = CategoryDetail;
+			sourceTree = "<group>";
+		};
 		CC62434026AA02670057941B /* TopicDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +321,7 @@
 				CC40CCEE26AC017E0050E016 /* TopicDetailRequest.swift */,
 				CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */,
 				CCE8E41926AD6BBD00A65514 /* CategoriesRequest.swift */,
+				CC56DE7526ADB4ED00E33FAD /* CategoryDetailRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -305,6 +336,7 @@
 				CC40CCEB26AC00440050E016 /* TopicDetailResponse.swift */,
 				CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */,
 				CCE8E41626AD675200A65514 /* CategoriesResponse.swift */,
+				CC56DE7226ADB48000E33FAD /* CategoryDetailResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -390,6 +422,7 @@
 		CCE8E40626AD655200A65514 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CC56DE6226ADAAFD00E33FAD /* CategoryDetail */,
 				CCE8E40726AD658B00A65514 /* CategoriesViewController.swift */,
 				CCE8E40B26AD659A00A65514 /* CategoriesViewModel.swift */,
 				CCE8E40E26AD65B100A65514 /* CategoriesViewCoordinator.swift */,
@@ -403,6 +436,7 @@
 		CCE8E41126AD66C600A65514 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CC56DE6D26ADAFBC00E33FAD /* CategoryDetail */,
 				CCE8E41226AD66DA00A65514 /* CategoriesUseCases.swift */,
 			);
 			path = Categories;
@@ -492,9 +526,11 @@
 				CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */,
 				CC40CCEF26AC017E0050E016 /* TopicDetailRequest.swift in Sources */,
 				CC41CD1126A72DB300073C9F /* UserDetailResponse.swift in Sources */,
+				CC56DE6B26ADAB4200E33FAD /* CategoryDetailCoordinator.swift in Sources */,
 				CC8FBD7626A47E93006518E7 /* DataManager.swift in Sources */,
 				CC8FBD8326A48D49006518E7 /* UsersRequest.swift in Sources */,
 				CCE8E41726AD675200A65514 /* CategoriesResponse.swift in Sources */,
+				CC56DE7626ADB4ED00E33FAD /* CategoryDetailRequest.swift in Sources */,
 				CCE8E42626AD826200A65514 /* UIColor+Extension.swift in Sources */,
 				CC41CD0E26A72CE200073C9F /* UserDetailRequest.swift in Sources */,
 				CC8FBD8026A48081006518E7 /* APIRequest.swift in Sources */,
@@ -502,6 +538,7 @@
 				CC8FBD6726A45AE4006518E7 /* UsersViewModel.swift in Sources */,
 				CC8FBD4226A44F25006518E7 /* ViewController.swift in Sources */,
 				CC8FBD6426A45AC8006518E7 /* UsersViewController.swift in Sources */,
+				CC56DE6826ADAB3300E33FAD /* CategoryDetailViewModel.swift in Sources */,
 				CC41CD0A26A72BCD00073C9F /* UserDetailUseCases.swift in Sources */,
 				CCE8E40826AD658B00A65514 /* CategoriesViewController.swift in Sources */,
 				CCCD529F26A9D12300C9CABA /* TopicsViewController.swift in Sources */,
@@ -516,12 +553,15 @@
 				CCCD52A526A9D15500C9CABA /* TopicsCoordinator.swift in Sources */,
 				CC8FBD7226A47CF2006518E7 /* UsersUseCases.swift in Sources */,
 				CC40CCF426AC2D3B0050E016 /* CreateTopicViewController.swift in Sources */,
+				CC56DE6F26ADAFCB00E33FAD /* CategoryDetailUseCases.swift in Sources */,
 				CC40CCEC26AC00440050E016 /* TopicDetailResponse.swift in Sources */,
+				CC56DE7326ADB48000E33FAD /* CategoryDetailResponse.swift in Sources */,
 				CCE8E41326AD66DA00A65514 /* CategoriesUseCases.swift in Sources */,
 				CCCD52A226A9D12D00C9CABA /* TopicsViewModel.swift in Sources */,
 				CC40CD0626AC38520050E016 /* CreateTopicRequest.swift in Sources */,
 				CC8FBD7A26A47F17006518E7 /* RemoteDataManager.swift in Sources */,
 				CC40CCFC26AC32200050E016 /* CreateTopicViewModel.swift in Sources */,
+				CC56DE6426ADAB2300E33FAD /* CategoryDetailViewController.swift in Sources */,
 				CC62434626AA02880057941B /* TopicDetailViewModel.swift in Sources */,
 				CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */,
 				CC8FBD6A26A45AF2006518E7 /* UsersCoordinator.swift in Sources */,

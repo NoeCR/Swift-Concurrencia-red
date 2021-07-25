@@ -56,6 +56,16 @@ class CategoriesViewController: UIViewController {
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(onTapAddButton))
+        
+        rightBarButtonItem.tintColor = .black
+        
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    @objc private func onTapAddButton() {
+        print("Add new Category")
     }
 }
 
@@ -91,4 +101,10 @@ extension CategoriesViewController: CategoriesViewProtocol {
     }
 }
 
-extension CategoriesViewController: UITableViewDelegate {}
+extension CategoriesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        viewModel.didSelectRow(at: indexPath)
+    }
+}
