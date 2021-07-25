@@ -48,10 +48,18 @@ class AppCoordinator: Coordinator {
         
         topicsCoordinator.start()
         
+        let categoriesNavigator = UINavigationController()
+        let categoriesCoordinator = CategoriesCoordinator(navigator: categoriesNavigator, categoriesUseCases: dataManager)
+
+        categoriesCoordinator.start()
+        
         // viewcontroller of tabbar
-        tabBarController.viewControllers = [usersNavigator, topicsNavigator]
+        // Añadimos los navigators al tab
+        tabBarController.viewControllers = [usersNavigator, topicsNavigator, categoriesNavigator]
+        // Establecemos una imagen para cada uno de los elementos del tab bar
         tabBarController.tabBar.items?.first?.image = UIImage(systemName: "tag")
         tabBarController.tabBar.items?[1].image = UIImage(systemName: "list.dash")
+        tabBarController.tabBar.items?[2].image = UIImage(systemName: "square.and.arrow.up.on.square.fill")
         
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
