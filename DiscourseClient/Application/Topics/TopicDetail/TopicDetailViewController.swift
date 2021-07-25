@@ -65,6 +65,23 @@ class TopicDetailsViewController: UIViewController {
         return postNumberStackView
     }()
     
+    let deleteTopicButton: UIButton = {
+        let button = UIButton(type: .system)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .red
+        button.setTitle("Delete", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(onTapDeleteButton), for: .touchUpInside)
+        button.titleEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        // Se establece la constraint y se activa para que la tenga en cuenta
+        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        button.layer.cornerRadius = 6
+        
+        return button
+    }()
+    
     init(viewModel: TopicDetatilViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -96,6 +113,14 @@ class TopicDetailsViewController: UIViewController {
             postNumberStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             postNumberStackView.topAnchor.constraint(equalTo: topicTitleStackView.bottomAnchor, constant: 16)
         ])
+        
+        view.addSubview(deleteTopicButton)
+        NSLayoutConstraint.activate([
+            deleteTopicButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            deleteTopicButton.topAnchor.constraint(equalTo: postNumberStackView.bottomAnchor, constant: 16)
+        ])
+        
+        deleteTopicButton.isHidden = true
     }
     
     override func viewDidLoad() {
@@ -110,11 +135,7 @@ class TopicDetailsViewController: UIViewController {
         // Bindeo de datos con el viewModel
         bindViewModel()
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        showLoader()
-//    }
-    
+        
     // Relación de datos entre el controlador y el viewModel
     private func bindViewModel() {
         // Evento que se llamara desde el viewModel al obtener la respuesta de la llamada a a API
@@ -127,11 +148,30 @@ class TopicDetailsViewController: UIViewController {
             self?.hideLoader()
             self?.showAlert(title: "Error fetching topic")
         }
+        
+        viewModel.onDeleteTopicSuccess = { [ weak self ] in
+            self?.hideLoader()
+//            self?.showAlert(title: "Topic deleted")
+            self?.viewModel.onNavigateToParent()
+        }
+        
+        viewModel.onDeleteTopicFail = { [ weak self ] in
+            self?.hideLoader()
+            self?.showAlert(title: "The topic could not be deleted")
+        }
     }
     
     private func updateUI(topicDetailViewStruct: TopicDetailViewStruct) {
         labelTopicID.text = topicDetailViewStruct.topicId
         labelTopicTitle.text = topicDetailViewStruct.topicName
         postNumberLabel.text = topicDetailViewStruct.postsNumber
+        deleteTopicButton.isHidden = !topicDetailViewStruct.topicCanBeDeleted
+    }
+    
+    @objc private func onTapDeleteButton() {
+        self.showLoader()
+        guard let topicId = labelTopicID.text, !topicId.isEmpty, Int(topicId) != nil else {return}
+
+        viewModel.onTapDeleteButton(topicId: Int(topicId)!)
     }
 }

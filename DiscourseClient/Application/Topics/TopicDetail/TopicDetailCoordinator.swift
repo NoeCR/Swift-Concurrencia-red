@@ -28,9 +28,10 @@ class TopicDetailCoordinator: Coordinator {
         topicDetailViewModel.coordinator = self
         
         navigator.pushViewController(topicDetailViewController, animated: false)
-        
     }
     
-    
+    func close() {
+        navigator.popViewController(animated: false)
+    }
     
 }

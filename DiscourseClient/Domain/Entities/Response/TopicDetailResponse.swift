@@ -103,8 +103,7 @@ struct Details: Codable {
   let notificationsReasonID: Int?
   let canEdit: Bool?
   let canCreatePost: Bool?
-  // let canReplyAsNewTopic: Bool
-  // let canFlagTopic: Bool
+ 
   let participants: [Participant]
   let createdBy: CreatedBy
   let lastPoster: CreatedBy
@@ -114,8 +113,6 @@ struct Details: Codable {
     case notificationsReasonID = "notifications_reason_id"
     case canEdit = "can_edit"
     case canCreatePost = "can_create_post"
-    // case canReplyAsNewTopic = "can_reply_as_new_topic"
-    // case canFlagTopic = "can_flag_topic"
     case participants = "participants"
     case createdBy = "created_by"
     case lastPoster = "last_poster"

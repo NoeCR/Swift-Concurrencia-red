@@ -17,6 +17,9 @@
 		CC40CD0026AC32F80050E016 /* CreateTopicUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */; };
 		CC40CD0326AC37750050E016 /* CreateTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */; };
 		CC40CD0626AC38520050E016 /* CreateTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */; };
+		CC4150E226ADE7290015805E /* DeleteTopicUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4150E126ADE7290015805E /* DeleteTopicUseCases.swift */; };
+		CC4150E526ADE77E0015805E /* DeleteTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4150E426ADE77E0015805E /* DeleteTopicResponse.swift */; };
+		CC4150E826ADE8000015805E /* DeleteTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4150E726ADE8000015805E /* DeleteTopicRequest.swift */; };
 		CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */; };
 		CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */; };
 		CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */; };
@@ -87,6 +90,9 @@
 		CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicUseCases.swift; sourceTree = "<group>"; };
 		CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicResponse.swift; sourceTree = "<group>"; };
 		CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicRequest.swift; sourceTree = "<group>"; };
+		CC4150E126ADE7290015805E /* DeleteTopicUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTopicUseCases.swift; sourceTree = "<group>"; };
+		CC4150E426ADE77E0015805E /* DeleteTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTopicResponse.swift; sourceTree = "<group>"; };
+		CC4150E726ADE8000015805E /* DeleteTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTopicRequest.swift; sourceTree = "<group>"; };
 		CC41CCFF26A72AA800073C9F /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
 		CC41CD0226A72AB800073C9F /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		CC41CD0526A72AC600073C9F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +190,14 @@
 				CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */,
 			);
 			path = TopicCreate;
+			sourceTree = "<group>";
+		};
+		CC4150E026ADE7180015805E /* TopicDelete */ = {
+			isa = PBXGroup;
+			children = (
+				CC4150E126ADE7290015805E /* DeleteTopicUseCases.swift */,
+			);
+			path = TopicDelete;
 			sourceTree = "<group>";
 		};
 		CC41CCFE26A72A8B00073C9F /* UserDetail */ = {
@@ -322,6 +336,7 @@
 				CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */,
 				CCE8E41926AD6BBD00A65514 /* CategoriesRequest.swift */,
 				CC56DE7526ADB4ED00E33FAD /* CategoryDetailRequest.swift */,
+				CC4150E726ADE8000015805E /* DeleteTopicRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -337,6 +352,7 @@
 				CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */,
 				CCE8E41626AD675200A65514 /* CategoriesResponse.swift */,
 				CC56DE7226ADB48000E33FAD /* CategoryDetailResponse.swift */,
+				CC4150E426ADE77E0015805E /* DeleteTopicResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -412,6 +428,7 @@
 		CCCD529D26A9D10A00C9CABA /* Topics */ = {
 			isa = PBXGroup;
 			children = (
+				CC4150E026ADE7180015805E /* TopicDelete */,
 				CC40CCFE26AC32E50050E016 /* TopicCreate */,
 				CC40CCE626ABFF570050E016 /* TopicDetail */,
 				CCCD52A726A9D50E00C9CABA /* TopicsUseCases.swift */,
@@ -522,6 +539,7 @@
 				CC8FBD5726A44FC7006518E7 /* AppCoordinator.swift in Sources */,
 				CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */,
 				CC62434226AA02790057941B /* TopicDetailViewController.swift in Sources */,
+				CC4150E526ADE77E0015805E /* DeleteTopicResponse.swift in Sources */,
 				CC62434926AA02940057941B /* TopicDetailCoordinator.swift in Sources */,
 				CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */,
 				CC40CCEF26AC017E0050E016 /* TopicDetailRequest.swift in Sources */,
@@ -541,6 +559,7 @@
 				CC56DE6826ADAB3300E33FAD /* CategoryDetailViewModel.swift in Sources */,
 				CC41CD0A26A72BCD00073C9F /* UserDetailUseCases.swift in Sources */,
 				CCE8E40826AD658B00A65514 /* CategoriesViewController.swift in Sources */,
+				CC4150E226ADE7290015805E /* DeleteTopicUseCases.swift in Sources */,
 				CCCD529F26A9D12300C9CABA /* TopicsViewController.swift in Sources */,
 				CCE8E42026AD6FEC00A65514 /* CategoryCell.swift in Sources */,
 				CC8FBD7D26A47F39006518E7 /* SessionApi.swift in Sources */,
@@ -559,6 +578,7 @@
 				CCE8E41326AD66DA00A65514 /* CategoriesUseCases.swift in Sources */,
 				CCCD52A226A9D12D00C9CABA /* TopicsViewModel.swift in Sources */,
 				CC40CD0626AC38520050E016 /* CreateTopicRequest.swift in Sources */,
+				CC4150E826ADE8000015805E /* DeleteTopicRequest.swift in Sources */,
 				CC8FBD7A26A47F17006518E7 /* RemoteDataManager.swift in Sources */,
 				CC40CCFC26AC32200050E016 /* CreateTopicViewModel.swift in Sources */,
 				CC56DE6426ADAB2300E33FAD /* CategoryDetailViewController.swift in Sources */,

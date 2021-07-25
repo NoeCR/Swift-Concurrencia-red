@@ -12,15 +12,14 @@ struct TopicDetailViewStruct {
     let topicId: String
     let topicName: String
     let postsNumber: String
+    let topicCanBeDeleted: Bool
 }
 
 protocol TopicDetailProtocol: AnyObject {}
 
 class TopicDetatilViewModel: ViewModel {
     typealias View = TopicDetailProtocol
-    
     typealias Coordinator = TopicDetailCoordinator
-    
     typealias UseCases = TopicDetailUseCases
     
     // No se útiliza en el casos de comunicación con clousures, pero se debe implementar para
@@ -40,6 +39,8 @@ class TopicDetatilViewModel: ViewModel {
     // -> () = bloque de código que se ejecutara
     var onGetTopicFail: (() -> ())?
 
+    var onDeleteTopicSuccess: (() -> ())?
+    var onDeleteTopicFail: (() -> ())?
     
     init(topicId: Int, useCases: TopicDetailUseCases) {
         self.topicId = topicId
@@ -52,7 +53,7 @@ class TopicDetatilViewModel: ViewModel {
             case .success(let response):
                 guard let topicDetail = response else { return }
                 
-                let topicDetailViewStruct = TopicDetailViewStruct(topicId: "\(topicDetail.id)", topicName: topicDetail.title, postsNumber: "\(topicDetail.postsCount)")
+                let topicDetailViewStruct = TopicDetailViewStruct(topicId: "\(topicDetail.id)", topicName: topicDetail.title, postsNumber: "\(topicDetail.postsCount)", topicCanBeDeleted: topicDetail.details.canDelete ?? false)
                 
                 self?.onGetTopicSuccess?(topicDetailViewStruct)
                 
@@ -60,5 +61,24 @@ class TopicDetatilViewModel: ViewModel {
                 self?.onGetTopicFail?()
             }
         }
+    }
+    
+    func onTapDeleteButton(topicId: Int) {
+        let deleteTopicUseCases: DeleteTopicUseCases = DataManager(remoteDataManager: RemoteDataManager())
+        
+        deleteTopicUseCases.deleteTopic(topicId: topicId) {[weak self] result in
+            print(result)
+            switch result {
+            case .success:
+                self?.onDeleteTopicSuccess?()
+            case .failure:
+                self?.onDeleteTopicFail?()
+            }
+        }
+        
+    }
+    
+    func onNavigateToParent() {
+        self.coordinator?.close()
     }
 }
