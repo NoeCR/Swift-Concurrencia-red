@@ -25,12 +25,14 @@ struct CreateTopicRequest: APIRequest {
     }
     
     var path: String {
-        return ""
+        return "/posts.json"
     }
     
     var parameters: [String : String] {[:]}
     
-    var body: [String : Any] {[:]}
+    var body: [String : Any] {
+        ["title": title, "raw": raw, "created_at": createdAt]
+    }
     
     var headers: [String : String] {[:]}
     

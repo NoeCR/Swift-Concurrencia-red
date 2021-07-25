@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateTopicViewController" customModule="DiscourseClient" customModuleProvider="target">
             <connections>
-                <outlet property="submitButton" destination="1Kj-Wo-b6h" id="4ba-RK-5xJ"/>
-                <outlet property="textField" destination="K6D-sb-0Ew" id="S5u-NA-8Yi"/>
+                <outlet property="submitButton" destination="HIs-vB-GV9" id="EhM-TX-q9S"/>
+                <outlet property="textField" destination="sSc-c6-ymW" id="n48-3C-A1o"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,23 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="K6D-sb-0Ew">
-                    <rect key="frame" x="20" y="188" width="366" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-c6-ymW">
+                    <rect key="frame" x="16" y="108" width="382" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Kj-Wo-b6h">
-                    <rect key="frame" x="24" y="289" width="366" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIs-vB-GV9">
+                    <rect key="frame" x="16" y="206" width="382" height="30"/>
+                    <state key="normal" title="Create"/>
                     <connections>
-                        <action selector="onTapSubmitButton:" destination="-1" eventType="touchUpInside" id="8PF-0r-YsH"/>
+                        <action selector="onTapCreateButton" destination="-1" eventType="touchDown" id="jwb-UC-LsN"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sSc-c6-ymW" secondAttribute="trailing" constant="16" id="L4B-Kn-KCY"/>
+                <constraint firstItem="sSc-c6-ymW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mjm-zs-jP5"/>
+                <constraint firstItem="HIs-vB-GV9" firstAttribute="trailing" secondItem="sSc-c6-ymW" secondAttribute="trailing" id="SPf-dX-ivO"/>
+                <constraint firstItem="sSc-c6-ymW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="g2a-gL-VL6"/>
+                <constraint firstItem="HIs-vB-GV9" firstAttribute="top" secondItem="sSc-c6-ymW" secondAttribute="bottom" constant="64" id="s6v-de-ZF7"/>
+                <constraint firstItem="HIs-vB-GV9" firstAttribute="leading" secondItem="sSc-c6-ymW" secondAttribute="leading" id="tNb-n1-um7"/>
+            </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="102.45535714285714"/>
         </view>
     </objects>

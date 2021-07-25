@@ -48,7 +48,6 @@ class TopicDetatilViewModel: ViewModel {
     
     func viewDidLoad() {
         useCases.fetchTopicDetail(topicId: topicId) {[weak self] result in
-            print(result)
             switch result {
             case .success(let response):
                 guard let topicDetail = response else { return }

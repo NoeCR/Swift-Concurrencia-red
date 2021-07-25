@@ -71,7 +71,9 @@ class TopicsViewController: UIViewController {
         showAlert(title: "Error fetching topics")
     }
     
-    @objc private func onTapAddButton(){}
+    @objc private func onTapAddButton() {
+        viewModel.onTapAddButton()
+    }
 }
 
 extension TopicsViewController: UITableViewDataSource {

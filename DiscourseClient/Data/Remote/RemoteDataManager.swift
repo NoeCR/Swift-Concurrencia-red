@@ -10,5 +10,4 @@ import Foundation
 
 class RemoteDataManager {
     let session = SessionApi()
-
 }

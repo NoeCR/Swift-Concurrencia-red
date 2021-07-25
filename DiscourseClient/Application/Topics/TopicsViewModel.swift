@@ -59,4 +59,8 @@ class TopicsViewModel: ViewModel {
     func didSelectRow(at indexPath: IndexPath) {
         coordinator?.didSelectTopic(topic: topicCellViewModels[indexPath.row].topic)
     }
+    
+    func onTapAddButton() {
+        coordinator?.onTapAddButton()
+    }
 }

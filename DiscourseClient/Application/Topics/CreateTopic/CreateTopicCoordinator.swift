@@ -11,9 +11,9 @@ class CreateTopicCoordinator: Coordinator {
     var navigator: UINavigationController
     let useCases: CreateTopicUseCases
     
-    init(navigator: UINavigationController, createTopicUseCases: CreateTopicUseCases) {
+    init(navigator: UINavigationController, useCases: CreateTopicUseCases) {
         self.navigator = navigator
-        self.useCases = createTopicUseCases
+        self.useCases = useCases
     }
     
     func start() {
@@ -21,10 +21,14 @@ class CreateTopicCoordinator: Coordinator {
         let createTopicViewController = CreateTopicViewController(viewModel: createTopicViewModel)
         
         createTopicViewController.title = "Create new topic"
+        // Le damos el view al viewmodel aunque no lo usaremos, ya que lo implementaremos con clousures
         createTopicViewModel.view = createTopicViewController
         createTopicViewModel.coordinator = self
         
-        navigator.pushViewController(createTopicViewController, animated: false)
+        
+        // Para crear la pantalla de forma modal
+        let navigationController = UINavigationController(rootViewController: createTopicViewController)
+        navigator.present(navigationController, animated: false, completion: nil)
     }
     
     
