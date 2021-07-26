@@ -28,7 +28,7 @@ final class SessionApi {
     func request<T: APIRequest> (request: T, completion: @escaping(Result<T.Response?, Error>) -> ()) {
         let request = request.requestWithBaseURL()
         
-        
+        print(request)
         let task = session.dataTask(with: request) { data, response, error in
             if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode >= 400 && httpResponse.statusCode < 500 {
                 // En caso de error
@@ -76,8 +76,6 @@ final class SessionApi {
             }
             
         }
-        
-        
         
         task.resume()
     }

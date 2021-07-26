@@ -29,6 +29,4 @@ class DeleteTopicRequest: APIRequest {
     var body: [String : Any] {[:]}
     
     var headers: [String : String] {[:]}
-    
-    
 }

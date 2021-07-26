@@ -17,6 +17,15 @@
 		CC40CD0026AC32F80050E016 /* CreateTopicUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */; };
 		CC40CD0326AC37750050E016 /* CreateTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */; };
 		CC40CD0626AC38520050E016 /* CreateTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */; };
+		CC40DB5826AF1000009F8B21 /* CreateCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB5726AF1000009F8B21 /* CreateCategoryViewModel.swift */; };
+		CC40DB5B26AF100E009F8B21 /* CreateCategoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB5A26AF100E009F8B21 /* CreateCategoryCoordinator.swift */; };
+		CC40DB6026AF113D009F8B21 /* CreateCategoryUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB5F26AF113D009F8B21 /* CreateCategoryUseCases.swift */; };
+		CC40DB6526AF12C6009F8B21 /* CreateCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB6326AF12C6009F8B21 /* CreateCategoryViewController.swift */; };
+		CC40DB6626AF12C6009F8B21 /* CreateCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC40DB6426AF12C6009F8B21 /* CreateCategoryViewController.xib */; };
+		CC40DB6926AF1966009F8B21 /* UIImageVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB6826AF1966009F8B21 /* UIImageVIew+Extension.swift */; };
+		CC40DB6C26AF1D2D009F8B21 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB6B26AF1D2D009F8B21 /* CGFloat+Extension.swift */; };
+		CC40DB6F26AF1EA3009F8B21 /* CreateCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB6E26AF1EA3009F8B21 /* CreateCategoryResponse.swift */; };
+		CC40DB7226AF1EF8009F8B21 /* CreateCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40DB7126AF1EF8009F8B21 /* CreateCategoryRequest.swift */; };
 		CC4150E226ADE7290015805E /* DeleteTopicUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4150E126ADE7290015805E /* DeleteTopicUseCases.swift */; };
 		CC4150E526ADE77E0015805E /* DeleteTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4150E426ADE77E0015805E /* DeleteTopicResponse.swift */; };
 		CC4150E826ADE8000015805E /* DeleteTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4150E726ADE8000015805E /* DeleteTopicRequest.swift */; };
@@ -90,6 +99,15 @@
 		CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicUseCases.swift; sourceTree = "<group>"; };
 		CC40CD0226AC37750050E016 /* CreateTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicResponse.swift; sourceTree = "<group>"; };
 		CC40CD0526AC38520050E016 /* CreateTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTopicRequest.swift; sourceTree = "<group>"; };
+		CC40DB5726AF1000009F8B21 /* CreateCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryViewModel.swift; sourceTree = "<group>"; };
+		CC40DB5A26AF100E009F8B21 /* CreateCategoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryCoordinator.swift; sourceTree = "<group>"; };
+		CC40DB5F26AF113D009F8B21 /* CreateCategoryUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryUseCases.swift; sourceTree = "<group>"; };
+		CC40DB6326AF12C6009F8B21 /* CreateCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryViewController.swift; sourceTree = "<group>"; };
+		CC40DB6426AF12C6009F8B21 /* CreateCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCategoryViewController.xib; sourceTree = "<group>"; };
+		CC40DB6826AF1966009F8B21 /* UIImageVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageVIew+Extension.swift"; sourceTree = "<group>"; };
+		CC40DB6B26AF1D2D009F8B21 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		CC40DB6E26AF1EA3009F8B21 /* CreateCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryResponse.swift; sourceTree = "<group>"; };
+		CC40DB7126AF1EF8009F8B21 /* CreateCategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryRequest.swift; sourceTree = "<group>"; };
 		CC4150E126ADE7290015805E /* DeleteTopicUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTopicUseCases.swift; sourceTree = "<group>"; };
 		CC4150E426ADE77E0015805E /* DeleteTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTopicResponse.swift; sourceTree = "<group>"; };
 		CC4150E726ADE8000015805E /* DeleteTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTopicRequest.swift; sourceTree = "<group>"; };
@@ -190,6 +208,25 @@
 				CC40CCFF26AC32F80050E016 /* CreateTopicUseCases.swift */,
 			);
 			path = TopicCreate;
+			sourceTree = "<group>";
+		};
+		CC40DB5326AF0FBD009F8B21 /* CreateCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CC40DB5726AF1000009F8B21 /* CreateCategoryViewModel.swift */,
+				CC40DB5A26AF100E009F8B21 /* CreateCategoryCoordinator.swift */,
+				CC40DB6326AF12C6009F8B21 /* CreateCategoryViewController.swift */,
+				CC40DB6426AF12C6009F8B21 /* CreateCategoryViewController.xib */,
+			);
+			path = CreateCategory;
+			sourceTree = "<group>";
+		};
+		CC40DB5D26AF1123009F8B21 /* CreateCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CC40DB5F26AF113D009F8B21 /* CreateCategoryUseCases.swift */,
+			);
+			path = CreateCategory;
 			sourceTree = "<group>";
 		};
 		CC4150E026ADE7180015805E /* TopicDelete */ = {
@@ -337,6 +374,7 @@
 				CCE8E41926AD6BBD00A65514 /* CategoriesRequest.swift */,
 				CC56DE7526ADB4ED00E33FAD /* CategoryDetailRequest.swift */,
 				CC4150E726ADE8000015805E /* DeleteTopicRequest.swift */,
+				CC40DB7126AF1EF8009F8B21 /* CreateCategoryRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -353,6 +391,7 @@
 				CCE8E41626AD675200A65514 /* CategoriesResponse.swift */,
 				CC56DE7226ADB48000E33FAD /* CategoryDetailResponse.swift */,
 				CC4150E426ADE77E0015805E /* DeleteTopicResponse.swift */,
+				CC40DB6E26AF1EA3009F8B21 /* CreateCategoryResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -387,6 +426,8 @@
 				CC8FBD6D26A47B2A006518E7 /* ViewModel.swift */,
 				CC8FBD9226A4C2AE006518E7 /* UIViewController+Extension.swift */,
 				CCE8E42526AD826200A65514 /* UIColor+Extension.swift */,
+				CC40DB6826AF1966009F8B21 /* UIImageVIew+Extension.swift */,
+				CC40DB6B26AF1D2D009F8B21 /* CGFloat+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -439,6 +480,7 @@
 		CCE8E40626AD655200A65514 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CC40DB5326AF0FBD009F8B21 /* CreateCategory */,
 				CC56DE6226ADAAFD00E33FAD /* CategoryDetail */,
 				CCE8E40726AD658B00A65514 /* CategoriesViewController.swift */,
 				CCE8E40B26AD659A00A65514 /* CategoriesViewModel.swift */,
@@ -453,6 +495,7 @@
 		CCE8E41126AD66C600A65514 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CC40DB5D26AF1123009F8B21 /* CreateCategory */,
 				CC56DE6D26ADAFBC00E33FAD /* CategoryDetail */,
 				CCE8E41226AD66DA00A65514 /* CategoriesUseCases.swift */,
 			);
@@ -518,6 +561,7 @@
 			files = (
 				CC40CCF526AC2D3B0050E016 /* CreateTopicViewController.xib in Resources */,
 				CCE8E42326AD715D00A65514 /* CategoryCell.xib in Resources */,
+				CC40DB6626AF12C6009F8B21 /* CreateCategoryViewController.xib in Resources */,
 				CC8FBD4A26A44F26006518E7 /* LaunchScreen.storyboard in Resources */,
 				CCCD52B726A9DDCF00C9CABA /* TopicCell.xib in Resources */,
 				CC8FBD4726A44F26006518E7 /* Assets.xcassets in Resources */,
@@ -532,16 +576,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC40DB6F26AF1EA3009F8B21 /* CreateCategoryResponse.swift in Sources */,
 				CCE8E40F26AD65B100A65514 /* CategoriesViewCoordinator.swift in Sources */,
 				CCE8E41A26AD6BBD00A65514 /* CategoriesRequest.swift in Sources */,
 				CC40CD0326AC37750050E016 /* CreateTopicResponse.swift in Sources */,
 				CC8FBD9326A4C2AE006518E7 /* UIViewController+Extension.swift in Sources */,
 				CC8FBD5726A44FC7006518E7 /* AppCoordinator.swift in Sources */,
+				CC40DB6926AF1966009F8B21 /* UIImageVIew+Extension.swift in Sources */,
 				CC41CD0326A72AB800073C9F /* UserDetailViewModel.swift in Sources */,
 				CC62434226AA02790057941B /* TopicDetailViewController.swift in Sources */,
 				CC4150E526ADE77E0015805E /* DeleteTopicResponse.swift in Sources */,
 				CC62434926AA02940057941B /* TopicDetailCoordinator.swift in Sources */,
 				CC41CD0026A72AA800073C9F /* UserDetailCoordinator.swift in Sources */,
+				CC40DB6526AF12C6009F8B21 /* CreateCategoryViewController.swift in Sources */,
 				CC40CCEF26AC017E0050E016 /* TopicDetailRequest.swift in Sources */,
 				CC41CD1126A72DB300073C9F /* UserDetailResponse.swift in Sources */,
 				CC56DE6B26ADAB4200E33FAD /* CategoryDetailCoordinator.swift in Sources */,
@@ -556,6 +603,7 @@
 				CC8FBD6726A45AE4006518E7 /* UsersViewModel.swift in Sources */,
 				CC8FBD4226A44F25006518E7 /* ViewController.swift in Sources */,
 				CC8FBD6426A45AC8006518E7 /* UsersViewController.swift in Sources */,
+				CC40DB5826AF1000009F8B21 /* CreateCategoryViewModel.swift in Sources */,
 				CC56DE6826ADAB3300E33FAD /* CategoryDetailViewModel.swift in Sources */,
 				CC41CD0A26A72BCD00073C9F /* UserDetailUseCases.swift in Sources */,
 				CCE8E40826AD658B00A65514 /* CategoriesViewController.swift in Sources */,
@@ -568,9 +616,11 @@
 				CC42A30A26A887A200B4B0A8 /* UpdateUserNameRequest.swift in Sources */,
 				CCCD52A826A9D50E00C9CABA /* TopicsUseCases.swift in Sources */,
 				CCE8E41D26AD6FE000A65514 /* CategoryCellViewModel.swift in Sources */,
+				CC40DB5B26AF100E009F8B21 /* CreateCategoryCoordinator.swift in Sources */,
 				CC40CCE826ABFF680050E016 /* TopicDetailUseCases.swift in Sources */,
 				CCCD52A526A9D15500C9CABA /* TopicsCoordinator.swift in Sources */,
 				CC8FBD7226A47CF2006518E7 /* UsersUseCases.swift in Sources */,
+				CC40DB6026AF113D009F8B21 /* CreateCategoryUseCases.swift in Sources */,
 				CC40CCF426AC2D3B0050E016 /* CreateTopicViewController.swift in Sources */,
 				CC56DE6F26ADAFCB00E33FAD /* CategoryDetailUseCases.swift in Sources */,
 				CC40CCEC26AC00440050E016 /* TopicDetailResponse.swift in Sources */,
@@ -581,6 +631,7 @@
 				CC4150E826ADE8000015805E /* DeleteTopicRequest.swift in Sources */,
 				CC8FBD7A26A47F17006518E7 /* RemoteDataManager.swift in Sources */,
 				CC40CCFC26AC32200050E016 /* CreateTopicViewModel.swift in Sources */,
+				CC40DB6C26AF1D2D009F8B21 /* CGFloat+Extension.swift in Sources */,
 				CC56DE6426ADAB2300E33FAD /* CategoryDetailViewController.swift in Sources */,
 				CC62434626AA02880057941B /* TopicDetailViewModel.swift in Sources */,
 				CC41CD0626A72AC600073C9F /* UserDetailViewController.swift in Sources */,
@@ -590,6 +641,7 @@
 				CCCD52B126A9DD3B00C9CABA /* TopicCellViewModel.swift in Sources */,
 				CC8FBD3E26A44F25006518E7 /* AppDelegate.swift in Sources */,
 				CC42A30D26A8894400B4B0A8 /* UpdateNameResponse.swift in Sources */,
+				CC40DB7226AF1EF8009F8B21 /* CreateCategoryRequest.swift in Sources */,
 				CC40CCF926AC32120050E016 /* CreateTopicCoordinator.swift in Sources */,
 				CCCD52B426A9DD5F00C9CABA /* TopicCell.swift in Sources */,
 				CCCD52AE26A9D73100C9CABA /* LatestTopicsRequest.swift in Sources */,

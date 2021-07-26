@@ -37,4 +37,10 @@ class CategoriesCoordinator: Coordinator {
         
         categoryDetailCoordinator.start()
     }
+    
+    func onTapAddCategory() {
+        let createCategoryCoordinator = CreateCategoryCoordinator(navigator: navigator, useCases: dataManager)
+        
+        createCategoryCoordinator.start()
+    }
 }

@@ -64,8 +64,8 @@ class UserDetailViewController: UIViewController {
         let textFieldUserName = UITextField()
         textFieldUserName.borderStyle = .line
         textFieldUserName.translatesAutoresizingMaskIntoConstraints = false
-        textFieldUserName.frame.size.width = view.frame.width
-                
+        textFieldUserName.frame.size.width = view.frame.width / 2
+                  
         return textFieldUserName
     }()
     

@@ -68,4 +68,8 @@ class CategoriesViewModel: ViewModel {
     func didSelectRow(at indexPath: IndexPath) {
         coordinator?.didSelect(categoryId: categoryCellViewModels[indexPath.row].category.id)
     }
+    
+    func onTapAddCategory() {
+        coordinator?.onTapAddCategory()
+    }
 }

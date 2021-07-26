@@ -84,6 +84,16 @@ class CategoryDetailVIewController: UIViewController {
         // FIXME: sería necesario establecer la posición de forma responsiva
         categoryColorContainer.center = CGPoint(x: 150,
                                                 y: 200)
+        
+        // Pruebas para establecer la posición de forma responsiva
+        //        categoryColorContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        //        categoryColorContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        //        NSLayoutConstraint.activate([
+        //            categoryColorContainer.topAnchor.constraint(equalTo: categoryTitleStackView.bottomAnchor, constant: 16),
+        //            categoryColorContainer.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16)
+        //        ])
+        
         //        categoryColorContainer.center = CGPoint(x: view.frame.size.width  / 2,
         //                                                y: view.frame.size.height / 2)
         // categoryColorContainer.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)

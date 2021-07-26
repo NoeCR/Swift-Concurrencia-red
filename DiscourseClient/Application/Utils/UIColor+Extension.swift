@@ -8,41 +8,6 @@
 import UIKit
 
 extension UIColor {
-//   convenience init(red: Int, green: Int, blue: Int) {
-//       assert(red >= 0 && red <= 255, "Invalid red component")
-//       assert(green >= 0 && green <= 255, "Invalid green component")
-//       assert(blue >= 0 && blue <= 255, "Invalid blue component")
-//
-//       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-//   }
-//
-//   convenience init(rgb: Int) {
-//       self.init(
-//           red: (rgb >> 16) & 0xFF,
-//           green: (rgb >> 8) & 0xFF,
-//           blue: rgb & 0xFF
-//       )
-//   }
-    
-//    open func hexStringToUIColor(hex: String) -> UIColor {
-//        let cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-//
-//        if ((cString.count) != 6) {
-//                return UIColor.gray
-//            }
-//
-//        var rgbValue:UInt64 = 0
-//        Scanner(string: cString).scanHexInt64(&rgbValue)
-//
-//        return UIColor(
-//            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-//            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-//            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-//            alpha: CGFloat(1.0)
-//        )
-//
-//    }
-    
     convenience init(hexString: String) {
             let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
             var int = UInt64()
@@ -60,4 +25,28 @@ extension UIColor {
             }
             self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
         }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(
+            red: .random(),
+            green: .random(),
+            blue: .random(),
+            alpha: 1.0
+        )
+    }
+}
+
+extension UIColor {
+    func hexStringFromColor(color: UIColor) -> String {
+        let components = color.cgColor.components
+        let r: CGFloat = components?[0] ?? 0.0
+        let g: CGFloat = components?[1] ?? 0.0
+        let b: CGFloat = components?[2] ?? 0.0
+
+        let hexString = String.init(format: "#%02lX%02lX%02lX", lroundf(Float(r * 255)), lroundf(Float(g * 255)), lroundf(Float(b * 255)))
+
+        return hexString
+     }
 }

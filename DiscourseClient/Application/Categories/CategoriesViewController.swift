@@ -57,15 +57,15 @@ class CategoriesViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
-        let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(onTapAddButton))
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(onTapAddCategory))
         
         rightBarButtonItem.tintColor = .black
         
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
-    @objc private func onTapAddButton() {
-        print("Add new Category")
+    @objc private func onTapAddCategory() {
+        viewModel.onTapAddCategory()
     }
 }
 
@@ -81,6 +81,7 @@ extension CategoriesViewController: UITableViewDataSource {
             let color = UIColor(hexString: cellViewModel?.category.color ?? "FFFFFF")
 
             cell.viewModel = cellViewModel
+            cell.textLabel?.text = "\(indexPath.row + 1): \(cell.textLabel?.text ?? "")"
             cell.backgroundColor = color
                         
             return cell
